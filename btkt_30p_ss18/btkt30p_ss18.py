@@ -191,7 +191,6 @@ def main():
             4. xóa cầu thủ (Thanh lý hợp đồng)
             5. Tìm kiếm cầu thủ
             6. Thống kê phân loại phong độ
-            7. Đánh giá phong độ tự động
             8. Thoát chương trình
             """)
         choice = input("Mời bạn nhập chức năng (1-8): ")
