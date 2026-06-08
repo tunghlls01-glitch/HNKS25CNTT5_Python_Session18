@@ -193,21 +193,25 @@ def main():
             6. Thống kê phân loại phong độ
             8. Thoát chương trình
             """)
-        choice = input("Mời bạn nhập chức năng (1-8): ")
+        try:
+            choice = int(input("Mời bạn nhập chức năng (1-8): "))
+        except:
+            print("Nhập không đúng định dạng, mời bạn nhập số (1-8)")
+            continue
         match choice:
-            case "1":
+            case 1:
                 read_list(list_ct)
-            case "2":
+            case 2:
                 creat_list(list_ct)
-            case "3":
+            case 3:
                 update_list(list_ct)
-            case "4":
+            case 4:
                 delete_list(list_ct)
-            case "5":
+            case 5:
                 filter_list(list_ct)
-            case "6":
+            case 6:
                 total_all(list_ct)
-            case "8":
+            case 8:
                 print("Chào tạm biệt")
                 break
             case _:
